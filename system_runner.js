@@ -9,7 +9,7 @@ let textInput;
 let slider1, slider2, slider3, slider4;
 let songButton;
 
-let editorMode = false;          // false when in song mode
+let editorMode = true;          // false when in song mode
 let songLoadStatus = "loading"; // "error", "loaded"
 let song;
 let songIsPlaying = false;
