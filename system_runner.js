@@ -1,5 +1,6 @@
-const canvasWidth = 540;
-const canvasHeight = 960;
+const canvasWidth = 1400;
+const canvasHeight = 1500;
+
 
 
 let mainCanvas;
@@ -8,7 +9,7 @@ let textInput;
 let slider1, slider2, slider3, slider4;
 let songButton;
 
-let editorMode = true;          // false when in song mode
+let editorMode = false;          // false when in song mode
 let songLoadStatus = "loading"; // "error", "loaded"
 let song;
 let songIsPlaying = false;
@@ -43,6 +44,20 @@ function songLoadedSoFar(soFar) {
 function preload() {
   table = loadTable('volumes.csv', 'csv');
   words = loadStrings('words.txt');
+
+  //load image to background
+  img = loadImage('Big.jpg')
+ 
+  img3 = loadImage('Hands.png')
+  img4 = loadImage('Sparkle.png')
+  Man = loadImage('Man1.png')
+  Disk = loadImage('Disk.png')
+  moon1 = loadImage('Moon1.png')
+  moon2 = loadImage('Moon2.png')
+  moon3 = loadImage('Moon3.png')
+  moon4 = loadImage('Moon4.png')
+  moon5 = loadImage('Moon5.png')
+  moon6 = loadImage('Moon6.png')
 }
 
 let volumes = [];
